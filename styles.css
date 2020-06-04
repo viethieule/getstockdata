@@ -1,0 +1,26 @@
+body {
+    font-size: 13px;
+}
+
+#container {
+  padding: 40px;
+}
+
+#form {
+    margin-bottom: 40px;
+}
+
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+  color: transparent;
+}
+
+#chart {
+    position: sticky;
+    top: 20px;
+}
+
+.btn-load {
+    border-radius: 2px;
+}
