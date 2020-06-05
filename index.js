@@ -1,10 +1,10 @@
 function load() {
-    // var stockId = $("#stock").val();
-    // var fromDate = $("#from").val();
-    // var toDate = $("#to").val();
-    var stockId = "AAA";
-    var fromDate = "2020-06-04";
-    var toDate = "2020-06-04";
+    var stockId = $("#stock").val();
+    var fromDate = $("#from").val();
+    var toDate = $("#to").val();
+    // var stockId = "AAA";
+    // var fromDate = "2020-06-04";
+    // var toDate = "2020-06-04";
 
     $.get(
         `https://finfo-api.vndirect.com.vn/v3/stocks/intraday/history?symbols=${stockId}&sort=-time&limit=1000&fromDate=${fromDate}&toDate=${toDate}&fields=symbol,last,lastVol,time`,
